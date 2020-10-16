@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_from_forms.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form name="test" action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
+            <div>First name:<input name="FName" type="text" placeholder="Enter first name"> </div>
+            <div>Last name: <input name="LName" type="text" placeholder="Enter last name"></div>
+            <div>Email: <input name="Email" type="email" placeholder="Enter email"></div>
+            <div>Password: <input name="PWord" type="password" placeholder="Enter password"></div>
+            <div>Born in: <input name="Date" type="date"></div>
+            <div>en <input name="Lang" id="en" type="radio"  value="en"> ua <input name="Lang" id="ua" type="radio" value="ua"></div>
+            <div>
+                <select name="Gender" required>
+                    <option selected disabled>Select gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <button type="submit" id="submit">Send</button>
+            <hr color="white">
+            <input name="File" type="file">
+        </form>
+    </div>
+    <hr>
+    <div>
+        <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
+            <table>
+                <tr>
+                    <td><label for="GoogleFormat">Логін:</label></td>
+                    <td><input type="text" name="GoogleFormat" id="GoogleFormat" required></td>
+                </tr>
+                <tr>
+                    <td><label for="PWord">Пароль: </label></td>
+                    <td><input type="password" name="PWord" id="PWord" required></td>
+                </tr>
+                <tr>
+                    <td><label for="PWordR">Повторіть пароль: </label></td>
+                    <td><input type="password" name="PWordR" id="PWordR" required></td>
+                </tr>
+                <tr>
+                    <td><label for="man">Стать:</label></td>
+                    <td>
+                        <div>
+                            <label for="Male">Чоловік</label>
+                            <input type="radio" name="gender" id="Male" value="Male" required>
+                            <label for="Female">Жінка</label>
+                            <input type="radio" name="gender" id="Female" value="Female">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="city">Вкажіть місто: </label></td>
+                    <td>
+                        <div>
+                            <select name="city" id="city" size="4" required>
+                                <option value="Житомир" selected>Житомир</option>
+                                <option value="Київ">Київ</option>
+                                <option value="Львів">Львів</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="football">Інтереси</label></td>
+                    <td>
+                        <div>
+                            <input type="checkbox" name="football" id="football">
+                            <label for="football">футбол</label>
+                            <input type="checkbox" name="chess" id="chess">
+                            <label for="chess">шахи</label>
+                            <input type="checkbox" name="painting" id="painting">
+                            <label for="painting">малювання</label>
+                            <input type="checkbox" name="music" id="music">
+                            <label for="music">музика</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div>
+                            <center>
+                                <button type="reset">Очистити</button>
+                                <button type="submit" id="submit">Відправити</button>
+                            </center>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+    <div class="GoogleFormat">
+        <h1>Вход</h1>
+        <hr>
+        <div class="GoogleFormat-flex">
+            <div class="sign-in">
+                <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
+                    <ul>
+                        <li>
+                            <label for="email">Эл почта или телефон</label>
+                            <input type="text" name="email" id="email" required>
+                        </li>
+                        <li>
+                            <label for="pass">Пароль</label>
+                            <input type="password" name="pass" id="pass4" required>
+                        </li>
+                    </ul>
+                    <div class="pass">
+                        <div class="remember">
+                            <input type="checkbox" name="remember" id="remember" checked>
+                            <label for="remember">Запомнить меня</label>
+                        </div>
+                        <a href="#">Напомнить пароль</a>
+                    </div>
+
+
+                    <div class="sign">
+                        <button type="submit">Войти</button>
+                        <a href="#">Зарегистрироваться</a>
+                    </div>
+                </form>
+            </div>
+            <div class="vertline"></div>
+            <div class="button-login-from">
+                <p>Войти как пользователь</p>
+                <a class="fb" href="https://facebook.com">
+                    <img src="https://img.pngio.com/fb-icon-colored-png-transparent-png-facebook-png-transparent-fb-icon-png-860_1667.png" alt="" width="10px" height="20px">
+                    <b>Facebook</b>
+                </a>
+                <a class="google" href="https://google.com">
+                    <img src="https://img2.freepng.ru/20180324/sbe/kisspng-google-logo-g-suite-google-5ab6f1f0dbc9b7.1299911115219389289003.jpg" alt="" width="20px" height="20px">
+                    <b>Google</b>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="GoogleFormat">
+        <h1>Вход</h1>
+        <hr>
+        <div class="GoogleFormat-flex">
+            <div class="sign-in">
+                <form action="https://echo.htmlacademy.ru/courses" method="post" enctype="multipart/form-data">
+                    <ul>
+                        <li>
+                            <label for="last-name">Фамилия</label>
+                            <input type="text" name="last-name-" id="last-name" required>
+                        </li>
+                        <li>
+                            <label for="name-">Имя</label>
+                            <input type="text" name="name" id="name" required>
+                        </li>
+                        <li>
+                            <label for="email">Эл почта или телефон</label>
+                            <input type="text" name="email" id="email" required>
+                        </li>
+                        <li>
+                            <label for="pass">Пароль</label>
+                            <div class="writePass">
+                                <input type="password" name="pass" id="pass" required>
+                                <button type="button"><img src="https://toppng.com/uploads/preview/eye-closed-icon-11550225620ajweggaqlk.png" alt="" height="20" width="20"></button>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <div class="rules">
+                        <p>
+                            Пароль должен быть не менее 6 символов, содержать цифры и латинские
+                            буквы, в том числе заглавные, и не должен совпадать с именем и эл. почтой.
+                        </p>
+                        <p>Регистрируясь, вы соглашаетесь с <a href="#">пользовательским соглашением</a></p>
+                    </div>
+
+
+                    <div class="sign">
+                        <button type="submit">Зарегистрироваться</button>
+                        <a href="#">Я уже зерегистрирован</a>
+                    </div>
+                </form>
+            </div>
+            <div class="vertline"></div>
+            <div class="button-login-from">
+                <p>Войти как пользователь</p>
+                <a class="fb" href="https://facebook.com">
+                    <img src="https://img.pngio.com/fb-icon-colored-png-transparent-png-facebook-png-transparent-fb-icon-png-860_1667.png" alt="" width="10px" height="20px">
+                   <b>Facebook</b>
+                </a>
+                <a class="google" href="https://google.com">
+                    <img src="https://img2.freepng.ru/20180324/sbe/kisspng-google-logo-g-suite-google-5ab6f1f0dbc9b7.1299911115219389289003.jpg" alt="" width="20px" height="20px">
+                    <b>Google</b>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

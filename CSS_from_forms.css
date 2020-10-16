@@ -1,0 +1,155 @@
+.GoogleFormat {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-family: "Arial", serif;
+    width: 800px;
+    padding: 20px;
+}
+
+.GoogleFormat h1{
+    font-size: 30px;
+    margin-top: -10px;
+    color: #5a5a5a;
+    font-weight: normal;
+}
+
+.GoogleFormat ul label{
+    color: gray;
+}
+
+.GoogleFormat input[type="text"],
+.GoogleFormat input[type="password"]{
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.GoogleFormat a{
+    color: #68a1d9;
+    display: block;
+    text-decoration: none;
+}
+
+.GoogleFormat a:hover{
+    color: #68a1d9;
+    display: block;
+    text-decoration: underline;
+}
+
+.GoogleFormat-flex {
+    display: flex;
+}
+
+.sign-in {
+    margin-right: 10px;
+    flex: 4;
+}
+
+.GoogleFormat p{
+    color: gray;
+}
+
+.GoogleFormat ul{
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.GoogleFormat li{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.GoogleFormat form .sign{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+}
+
+.GoogleFormat form button[type="submit"]{
+    background-color: #00A046;
+    height: 32px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #FBFBFB;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.GoogleFormat .button-login-from p{
+    text-align: center;
+}
+
+.button-login-from {
+    margin-left: 10px;
+    display: flex;
+    align-items: stretch;
+    max-width: 400px;
+    flex: 3;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.button-login-from a {
+    height: 48px;
+    background-color: #F5F5F5;
+    vertical-align: center;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.button-login-from a img {
+    padding-top: 10px;
+}
+
+.pass {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.vertline {
+    border-left: 1px solid gray;
+    left: 50%;
+    height: auto;
+}
+
+.writePass {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.writePass button {
+    border: 0;
+    height: 20px;
+    box-shadow: none;
+    background-color: white;
+}
+
+.writePass button:focus {
+    border: 0;
+    box-shadow: none;
+    background-color: white;
+}
+
+.writePass img {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: -5px;
+}
+
+.writePass input {
+    flex: 1;
+}
